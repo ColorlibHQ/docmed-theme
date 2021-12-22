@@ -20,8 +20,8 @@ function docmed_common_custom_css(){
 		$whiteColor     		  	= '#ffffff';
 		$themeColor     		  	= docmed_opt( 'docmed_theme_color' ) != '#131313' ? docmed_opt( 'docmed_theme_color' ) : '';
 		$themeSecColor     		  	= '';
-		$bookBtnColor       		= docmed_opt( 'docmed_book_btn_color' ) != '#131313' ? docmed_opt('docmed_book_btn_color') : '';
-		$bookBtnHoverBgColor     	= docmed_opt( 'docmed_book_btn_hvr_bg_color' ) != '#131313' ? docmed_opt('docmed_book_btn_hvr_bg_color') : $themeColor;
+		$headerTopBgColor     	= docmed_opt( 'docmed_header_top_bg_color' ) != '#F5FBFF' ? docmed_opt('docmed_header_top_bg_color') : '';
+		$bookBtnColor       		= docmed_opt( 'docmed_book_btn_color' ) != '#009DFF' ? docmed_opt('docmed_book_btn_color') : '';
 		$hoverColor     	  	  = docmed_opt( 'docmed_quote_btn_hvr_text_color');
 
 		$headerTop_bg     		  = '';
@@ -36,19 +36,19 @@ function docmed_common_custom_css(){
 		$dropMenuBgColor          = docmed_opt( 'docmed_header_drop_menu_bg_color' ) != '#ffffff' ? docmed_opt('docmed_header_drop_menu_bg_color') : $themeColor;
 		$dropMenuColor            = docmed_opt( 'docmed_dropdown_menu_color' ) != '#131313' ? docmed_opt('docmed_dropdown_menu_color') : '';
 		$dropMenuHovColor         = docmed_opt( 'docmed_dropdown_menu_hover_color' ) != '#808080' ? docmed_opt('docmed_dropdown_menu_hover_color') : $themeColor;
-
+		
 		$footerwbgColor     	  = docmed_opt( 'docmed_footer_widget_bg_color' );
 		$footerwHeadColor   	  = docmed_opt('docmed_footer_widget_heading_color');
-		$footerwTextColor   	  = docmed_opt('docmed_footer_widget_text_color');
-		$footerwanchorcolor 	  = docmed_opt('docmed_footer_widget_anchor_color') != '#ffffff' ? docmed_opt('docmed_footer_widget_anchor_color') : '';
-		$footerwanchorhovcolor    = docmed_opt('docmed_footer_widget_anchor_hover_color') != '#ffffff' ? docmed_opt('docmed_footer_widget_anchor_hover_color') : '';
+		$footerwTextColor   	  = docmed_opt('docmed_footer_widget_text_color') != '#C7C7C7' ? docmed_opt('docmed_footer_widget_text_color') : '';
+		$footerwanchorcolor 	  = docmed_opt('docmed_footer_widget_anchor_color') != '#bababa' ? docmed_opt('docmed_footer_widget_anchor_color') : '';
+		$footerwanchorhovcolor    = docmed_opt('docmed_footer_widget_anchor_hover_color') != '#5DB2FF' ? docmed_opt('docmed_footer_widget_anchor_hover_color') : '';
 		
 		$fofbg					  = docmed_opt('docmed_fof_bg_color');
 		$foftonecolor			  = docmed_opt('docmed_fof_textone_color');
 		$fofttwocolor			  = docmed_opt('docmed_fof_texttwo_color');
 
 		$bannerBtnHeaderSpanColor = $themeColor != '#ff5e13' ? $themeColor : '';
-		$footerAncDefColor 		  = docmed_opt('docmed_footer_widget_anchor_color') != '#9e9e9e' ? docmed_opt('docmed_footer_widget_anchor_color') : '';
+		$footerAncDefColor 		  = docmed_opt('docmed_footer_widget_anchor_color') != '#bababa' ? docmed_opt('docmed_footer_widget_anchor_color') : '#5DB2FF';
 		$footerAncDefHovColor 	  = $footerwanchorhovcolor != '#bababa' ? $footerwanchorhovcolor : $themeColor;
 
 		$customcss ="			
@@ -215,7 +215,7 @@ function docmed_common_custom_css(){
 				background: {$headerBg};
 			}
 
-			.footer-area, .footer_Part, .footer_Part:before, .footer_Part:after, .footer {
+			.footer-area, .footer_Part, .footer_Part:before, .footer_Part:after, .footer .footer_top {
 				background: {$footerwbgColor};
 			}
 
@@ -231,7 +231,7 @@ function docmed_common_custom_css(){
 				border-color: {$footerwTextColor}
 			}
 
-			.footer-area .social_icon a, .footer-area .single-footer-widget ul li a, .footer_Part .footer_menu a, .footer_Part .social_icon a, .footer .footer_top .footer_widget ul li a, .footer .footer_top .footer_widget:not(.widget_nav_menu) a, .footer_area .footer-bottom .social_links ul li a, .footer_area .footer_widget form button
+			.footer-area .social_icon a, .footer-area .single-footer-widget ul li a, .footer_Part .footer_menu a, .footer_Part .social_icon a, .footer .footer_top .footer_widget:not(.widget_nav_menu) a, .footer_area .footer-bottom .social_links ul li a, .footer_area .footer_widget form button
 			{
 			   color: {$footerwanchorcolor};
 			}
@@ -242,12 +242,12 @@ function docmed_common_custom_css(){
 			.footer_area .footer-bottom .social_links ul li a:hover {
 				background: {$footerwanchorhovcolor};
 			}
-			.footer-area .copyright_part_text .footer-text > a, .footer_Part .copyright_part p > a, .footer .copy-right_text .copy_right a, .footer_area .copyright_text p a, .footer_area .footer-bottom .copyright .footer-text a, .footer .footer_copy_right p a
+			.footer .copy-right_text .copy_right a
 			{
 			   color: {$footerAncDefColor};
 			}
 
-			.footer .copy-right_text .copy_right a:hover, .footer_area .single-footer-widget ul li a
+			.footer .copy-right_text .copy_right a:hover, .footer_area .single-footer-widget ul li a, .footer .footer_top .footer_widget ul li a
 			{
 			   color: {$footerwanchorcolor};
 			}
@@ -289,21 +289,26 @@ function docmed_common_custom_css(){
 				color: {$whiteColor} !important;
 			}
 
-			.header-area .get_in_tauch a
+			.header-area .header-top_area {
+				background: {$headerTopBgColor};
+			}
+
+			.header-area .header-top_area .short_contact_list ul li a i, .header-area .header-top_area .social_media_links a:hover
+			{
+				color: {$bookBtnColor};
+			}
+
+			.header-area .get_in_tauch a, .header-area .main-header-area .Appointment .book_btn a
+			{
+				background: {$bookBtnColor};
+			}
+
+			.header-area .main-header-area .Appointment .book_btn a:hover
 			{
 				color: {$bookBtnColor};
 				border-color: {$bookBtnColor};
 			}
-			.header-area .get_in_tauch a:hover
-			{
-				border-color: {$bookBtnHoverBgColor};
-				background: {$bookBtnHoverBgColor};
-			}
-			.header-area .main-header-area.sticky .boxed_btn_white
-			{
-				color: {$bookBtnHoverBgColor};
-				border-color: {$bookBtnHoverBgColor};
-			}
+
 			.slider_area .single_slider .slider_text a
 			{
 				color: {$themeColor};

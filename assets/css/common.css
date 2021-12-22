@@ -1113,3 +1113,16 @@ li.breadcrumb-item.active a, li.breadcrumb-item a {
 .header-area {
     z-index: 99;
 }
+
+#test-form form {
+    position: relative;
+}
+
+#test-form .wpcf7 form .wpcf7-response-output {
+    position: absolute;
+    bottom: 25px;
+    margin: 0 5%;
+    left: auto;
+    right: auto;
+    width: 90%;
+}

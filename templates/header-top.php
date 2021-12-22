@@ -3,6 +3,7 @@
         <![endif]-->
 
     <!-- header-start -->
+    <?php $header_btn_url  = docmed_opt('docmed_header_btn_url');?>
     <header>
         <div class="header-area ">
             <div class="header-top_area">
@@ -78,10 +79,20 @@
                                 <?php
                                 if ( !empty( docmed_opt('docmed_header_btn_text') )) { 
                                     $header_btn_text = docmed_opt('docmed_header_btn_text');
-                                    $header_btn_url  = docmed_opt('docmed_header_btn_url');
+                                    $header_btn_toggle  = docmed_opt('docmed_form_url_toggle');
                                     ?>
                                     <div class="book_btn d-none d-lg-block">
-                                        <a class="" href="<?=esc_url($header_btn_url)?>"><?=esc_html($header_btn_text)?></a>
+                                        <?php
+                                            if ( $header_btn_toggle == 1 ) {
+                                                ?>
+                                                    <a class="popup-with-form" href="#test-form"><?=esc_html($header_btn_text)?></a>
+                                                <?php
+                                            } else {
+                                                ?>
+                                                <a class="" href="<?=esc_url($header_btn_url)?>"><?=esc_html($header_btn_text)?></a>
+                                                <?php
+                                            }
+                                        ?>
                                     </div>
                                     <?php
                                 }
@@ -97,3 +108,10 @@
         </div>
     </header>
     <!-- header-end -->
+
+    <!-- popup form -->
+    <div id="test-form" class="white-popup-block mfp-hide">
+        <?php
+            echo do_shortcode( $header_btn_url );
+        ?>
+    </div>

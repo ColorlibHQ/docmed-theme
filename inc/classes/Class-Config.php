@@ -384,7 +384,7 @@ final class Docmed {
 		if ( 'off' !== _x( 'on', 'Google font: on or off', 'docmed' ) ) {
 			
 			$font_families = array(
-				'Poppins:300,400,500,500i,600,700,700i,800,800i,900',
+				'Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700',
 			);
 
 			$familyArgs = array(

@@ -14,17 +14,17 @@
  ***********************************/
 
  // Theme color field
-Epsilon_Customizer::add_field(
-    'docmed_theme_color',
-    array(
-        'type'        => 'epsilon-color-picker',
-        'label'       => esc_html__( 'Theme Color', 'docmed' ),
-        'description' => esc_html__( 'Select the theme color.', 'docmed' ),
-        'sanitize_callback' => 'sanitize_text_field',
-        'section'     => 'docmed_general_section',
-        'default'     => '#131313',
-    )
-);
+// Epsilon_Customizer::add_field(
+//     'docmed_theme_color',
+//     array(
+//         'type'        => 'epsilon-color-picker',
+//         'label'       => esc_html__( 'Theme Color', 'docmed' ),
+//         'description' => esc_html__( 'Select the theme color.', 'docmed' ),
+//         'sanitize_callback' => 'sanitize_text_field',
+//         'section'     => 'docmed_general_section',
+//         'default'     => '#131313',
+//     )
+// );
 
 // Header Top sections
 Epsilon_Customizer::add_field(
@@ -73,15 +73,40 @@ Epsilon_Customizer::add_field(
     )
 );
 
+// External url or Popup form
+Epsilon_Customizer::add_field(
+    'docmed_form_url_toggle',
+    array(
+        'type'        => 'epsilon-toggle',
+        'label'       => esc_html__( 'Popup Form/Ex. URL', 'docmed' ),
+        'description'       => esc_html__( 'Popup Form Shortcode or External URL?', 'docmed' ),
+        'section'     => 'docmed_header_section',
+        'default'     => true,
+    )
+);
+
 // Header button URL
 Epsilon_Customizer::add_field(
     'docmed_header_btn_url',
     array(
         'type'        => 'text',
-        'label'       => esc_html__( 'Header Button URL', 'docmed' ),
+        'label'       => esc_html__( 'Form Shortcode or External URL', 'docmed' ),
         'section'     => 'docmed_header_section',
         'sanitize_callback' => 'sanitize_text_field',
-        'default'     => esc_html__( '#', 'docmed' ),
+    )
+);
+
+
+// Header top bg color
+Epsilon_Customizer::add_field(
+    'docmed_header_top_bg_color',
+    array(
+        'type'        => 'epsilon-color-picker',
+        'label'       => esc_html__( 'Header Top Bg Color', 'docmed' ),
+        'description' => esc_html__( 'Select the color.', 'docmed' ),
+        'sanitize_callback' => 'sanitize_text_field',
+        'section'     => 'docmed_header_section',
+        'default'     => '#F5FBFF',
     )
 );
 
@@ -90,24 +115,11 @@ Epsilon_Customizer::add_field(
     'docmed_book_btn_color',
     array(
         'type'        => 'epsilon-color-picker',
-        'label'       => esc_html__( 'Header Button Color', 'docmed' ),
+        'label'       => esc_html__( 'Header Icons & Button Color', 'docmed' ),
         'description' => esc_html__( 'Select the color.', 'docmed' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'docmed_header_section',
-        'default'     => '#131313',
-    )
-);
-
-// Header book button hover bg color
-Epsilon_Customizer::add_field(
-    'docmed_book_btn_hvr_bg_color',
-    array(
-        'type'        => 'epsilon-color-picker',
-        'label'       => esc_html__( 'Header Button Hover Bg Color', 'docmed' ),
-        'description' => esc_html__( 'Select the color.', 'docmed' ),
-        'sanitize_callback' => 'sanitize_text_field',
-        'section'     => 'docmed_header_section',
-        'default'     => '#131313',
+        'default'     => '#009DFF',
     )
 );
 
@@ -450,7 +462,7 @@ Epsilon_Customizer::add_field(
         'label'       => esc_html__( 'Footer Widget Bg Color', 'docmed' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'docmed_footer_section',
-        'default'     => '#1f1b1b',
+        'default'     => '#1F1F1F',
     )
 );
 
@@ -474,7 +486,7 @@ Epsilon_Customizer::add_field(
         'label'       => esc_html__( 'Footer Text Color', 'docmed' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'docmed_footer_section',
-        'default'     => '#a3a3a3',
+        'default'     => '#C7C7C7',
     )
 );
 
@@ -486,7 +498,7 @@ Epsilon_Customizer::add_field(
         'label'       => esc_html__( 'Footer Anchor Color', 'docmed' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'docmed_footer_section',
-        'default'     => '#9e9e9e',
+        'default'     => '#BABABA',
     )
 );
 
@@ -498,7 +510,7 @@ Epsilon_Customizer::add_field(
         'label'       => esc_html__( 'Footer Anchor Hover Color', 'docmed' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'docmed_footer_section',
-        'default'     => '#ffffff',
+        'default'     => '#5DB2FF',
     )
 );
 
