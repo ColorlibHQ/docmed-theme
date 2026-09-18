@@ -27,10 +27,10 @@
 // );
 
 // Header Top sections
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'header_color_section',
     array(
-        'type'        => 'epsilon-separator',
+        'type'        => 'colorlib-separator',
         'label'       => esc_html__( 'Header Top Section', 'docmed' ),
         'section'     => 'docmed_header_section',
 
@@ -38,7 +38,7 @@ Epsilon_Customizer::add_field(
 );
 
 // Header top email
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'docmed_header_top_email',
     array(
         'type'        => 'text',
@@ -50,7 +50,7 @@ Epsilon_Customizer::add_field(
 );
 
 // Header top phone number
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'docmed_header_top_phone',
     array(
         'type'        => 'text',
@@ -62,7 +62,7 @@ Epsilon_Customizer::add_field(
 );
 
 // Header button label
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'docmed_header_btn_text',
     array(
         'type'        => 'text',
@@ -74,10 +74,10 @@ Epsilon_Customizer::add_field(
 );
 
 // External url or Popup form
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'docmed_form_url_toggle',
     array(
-        'type'        => 'epsilon-toggle',
+        'type'        => 'colorlib-toggle',
         'label'       => esc_html__( 'Popup Form/Ex. URL', 'docmed' ),
         'description'       => esc_html__( 'Popup Form Shortcode or External URL?', 'docmed' ),
         'section'     => 'docmed_header_section',
@@ -86,7 +86,7 @@ Epsilon_Customizer::add_field(
 );
 
 // Header button URL
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'docmed_header_btn_url',
     array(
         'type'        => 'text',
@@ -98,10 +98,10 @@ Epsilon_Customizer::add_field(
 
 
 // Header top bg color
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'docmed_header_top_bg_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Header Top Bg Color', 'docmed' ),
         'description' => esc_html__( 'Select the color.', 'docmed' ),
         'sanitize_callback' => 'sanitize_text_field',
@@ -111,10 +111,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Header call button bg color
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'docmed_book_btn_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Header Icons & Button Color', 'docmed' ),
         'description' => esc_html__( 'Select the color.', 'docmed' ),
         'sanitize_callback' => 'sanitize_text_field',
@@ -124,10 +124,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Header color sections
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'header_color_section',
     array(
-        'type'        => 'epsilon-separator',
+        'type'        => 'colorlib-separator',
         'label'       => esc_html__( 'Header Color Section', 'docmed' ),
         'section'     => 'docmed_header_section',
 
@@ -135,10 +135,10 @@ Epsilon_Customizer::add_field(
 );
  
 // Header background color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'docmed_header_bg_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Sticky Header BG Color', 'docmed' ),
         'description' => esc_html__( 'Select the header background color.', 'docmed' ),
         'sanitize_callback' => 'sanitize_text_field',
@@ -148,10 +148,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Header nav menu color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'docmed_header_menu_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Header menu color', 'docmed' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'docmed_header_section',
@@ -160,10 +160,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Header nav menu hover color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'docmed_header_menu_hover_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Header menu hover color', 'docmed' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'docmed_header_section',
@@ -172,10 +172,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Dropdown menu color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'docmed_dropdown_menu_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Dropdown menu color', 'docmed' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'docmed_header_section',
@@ -184,10 +184,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Dropdown menu hover color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'docmed_dropdown_menu_hover_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Dropdown menu hover color', 'docmed' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'docmed_header_section',
@@ -197,10 +197,10 @@ Epsilon_Customizer::add_field(
 
 
 // Social Profile section
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'footer_social_profile_separator',
     array(
-        'type'        => 'epsilon-separator',
+        'type'        => 'colorlib-separator',
         'label'       => esc_html__( 'Social Profile Section', 'docmed' ),
         'section'     => 'docmed_social_section',
 
@@ -208,10 +208,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Social Profiles Show/Hide
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'docmed_social_profile_toggle',
     array(
-        'type'        => 'epsilon-toggle',
+        'type'        => 'colorlib-toggle',
         'label'       => esc_html__( 'Social Profile Show/Hide', 'docmed' ),
         'section'     => 'docmed_social_section',
         'default'     => true,
@@ -219,10 +219,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Footer Social Profile links
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
 	'docmed_social_profiles',
 	array(
-		'type'         => 'epsilon-repeater',
+		'type'         => 'colorlib-repeater',
 		'section'      => 'docmed_social_section',
 		'label'        => esc_html__( 'Social Profile Links', 'docmed' ),
         'button_label' => esc_html__( 'Add new social link', 'docmed' ),
@@ -262,7 +262,7 @@ Epsilon_Customizer::add_field(
 			),
 			'social_icon'        => array(
 				'label'   => esc_html__( 'Icon', 'docmed' ),
-				'type'    => 'epsilon-icon-picker',
+				'type'    => 'colorlib-icon-picker',
 				'default' => 'fa fa-facebook',
 			),
 			
@@ -275,7 +275,7 @@ Epsilon_Customizer::add_field(
  ***********************************/
  
 // Post excerpt length field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'docmed_excerpt_length',
     array(
         'type'        => 'text',
@@ -288,28 +288,28 @@ Epsilon_Customizer::add_field(
 );
 
 // Blog single page social share icon
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'docmed_blog_meta',
     array(
-        'type'        => 'epsilon-toggle',
+        'type'        => 'colorlib-toggle',
         'label'       => esc_html__( 'Blog page post meta show/hide', 'docmed' ),
         'section'     => 'docmed_blog_section',
         'default'     => true
     )
 );
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'docmed_like_btn',
     array(
-        'type'        => 'epsilon-toggle',
+        'type'        => 'colorlib-toggle',
         'label'       => esc_html__( 'Blog Single Page Like Button show/hide', 'docmed' ),
         'section'     => 'docmed_blog_section',
         'default'     => true
     )
 );
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'docmed_blog_share',
     array(
-        'type'        => 'epsilon-toggle',
+        'type'        => 'colorlib-toggle',
         'label'       => esc_html__( 'Blog Single Page Share show/hide', 'docmed' ),
         'section'     => 'docmed_blog_section',
         'default'     => true
@@ -322,10 +322,10 @@ Epsilon_Customizer::add_field(
  ***********************************/
 
 // Footer Widget section
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'footer_widget_separator',
     array(
-        'type'        => 'epsilon-separator',
+        'type'        => 'colorlib-separator',
         'label'       => esc_html__( 'Footer Widget Section', 'docmed' ),
         'section'     => 'docmed_footer_section',
 
@@ -333,10 +333,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Footer widget toggle field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'docmed_footer_widget_toggle',
     array(
-        'type'        => 'epsilon-toggle',
+        'type'        => 'colorlib-toggle',
         'label'       => esc_html__( 'Footer widget show/hide', 'docmed' ),
         'description' => esc_html__( 'Toggle to display footer widgets.', 'docmed' ),
         'section'     => 'docmed_footer_section',
@@ -345,10 +345,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Footer Additional Settings section
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'footer_additional_settings_separator',
     array(
-        'type'        => 'epsilon-separator',
+        'type'        => 'colorlib-separator',
         'label'       => esc_html__( 'Footer Additional Settings', 'docmed' ),
         'section'     => 'docmed_footer_section',
 
@@ -357,7 +357,7 @@ Epsilon_Customizer::add_field(
 
 
 // Footer short text field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'docmed_footer_text',
     array(
         'type'              => 'textarea',
@@ -374,7 +374,7 @@ Epsilon_Customizer::add_field(
  ***********************************/
 
 // 404 text #1 field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'docmed_fof_titleone',
     array(
         'type'              => 'text',
@@ -385,7 +385,7 @@ Epsilon_Customizer::add_field(
     )
 );
 // 404 text #2 field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'docmed_fof_titletwo',
     array(
         'type'              => 'text',
@@ -396,10 +396,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // 404 text #1 color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'docmed_fof_textone_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( '404 Text #1 Color', 'docmed' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'docmed_fof_section',
@@ -407,10 +407,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // 404 text #2 color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'docmed_fof_texttwo_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( '404 Text #2 Color', 'docmed' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'docmed_fof_section',
@@ -418,10 +418,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // 404 background color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'docmed_fof_bg_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( '404 Page Background Color', 'docmed' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'docmed_fof_section',
@@ -430,10 +430,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Footer Copyright section
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'docmed_footer_copyright_separator',
     array(
-        'type'        => 'epsilon-separator',
+        'type'        => 'colorlib-separator',
         'label'       => esc_html__( 'Footer Copyright Section', 'docmed' ),
         'section'     => 'docmed_footer_section',
         'default'     => true,
@@ -444,10 +444,10 @@ Epsilon_Customizer::add_field(
 // Footer copyright text field
 $url = 'https://colorlib.com/';
 $copyText = sprintf( __( 'Theme by %s colorlib %s Copyright &copy; %s  |  All rights reserved.', 'docmed' ), '<a target="_blank" href="' . esc_url( $url ) . '">', '</a>', date( 'Y' ) );
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'docmed_footer_copyright_text',
     array(
-        'type'        => 'epsilon-text-editor',
+        'type'        => 'colorlib-text-editor',
         'label'       => esc_html__( 'Footer copyright text', 'docmed' ),
         'section'     => 'docmed_footer_section',
         'default'     => wp_kses_post( $copyText ),
@@ -455,10 +455,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Footer widget bg color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'docmed_footer_widget_bg_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Footer Widget Bg Color', 'docmed' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'docmed_footer_section',
@@ -467,10 +467,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Footer widget text color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'docmed_footer_widget_heading_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Footer Heading Color', 'docmed' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'docmed_footer_section',
@@ -479,10 +479,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Footer widget text color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'docmed_footer_widget_text_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Footer Text Color', 'docmed' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'docmed_footer_section',
@@ -491,10 +491,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Footer widget anchor color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'docmed_footer_widget_anchor_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Footer Anchor Color', 'docmed' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'docmed_footer_section',
@@ -503,10 +503,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Footer widget anchor hover color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'docmed_footer_widget_anchor_hover_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Footer Anchor Hover Color', 'docmed' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'docmed_footer_section',
