@@ -115,3 +115,15 @@ require_once( DOCMED_DIR_PATH_INC . 'class-epsilon-init-dashboard.php' );
  */
 
 $Docmed = new Docmed();
+
+/**
+ * Editor and markup support this theme predates.
+ */
+if ( ! function_exists( 'docmed_modern_supports' ) ) {
+	function docmed_modern_supports() {
+		add_theme_support( 'responsive-embeds' );
+		add_theme_support( 'align-wide' );
+		add_theme_support( 'editor-styles' );
+	}
+	add_action( 'after_setup_theme', 'docmed_modern_supports', 20 );
+}
