@@ -34,10 +34,10 @@
                                 <ul>
                                     <?php
                                         if($docmed_header_top_email != '') {
-                                            echo '<li><a href="mailto:'.esc_attr($docmed_header_top_email).'"> <i class="fa fa-envelope"></i> '.$docmed_header_top_email.'</a></li>';
+                                            echo '<li><a href="mailto:'.esc_attr($docmed_header_top_email).'"> <i class="fa-solid fa-envelope"></i> '.$docmed_header_top_email.'</a></li>';
                                         }
                                         if($docmed_header_top_phone != '') {
-                                            echo '<li><a href="tel:'.esc_attr($docmed_header_top_phone).'"> <i class="fa fa-phone"></i> '.$docmed_header_top_phone.'</a></li>';
+                                            echo '<li><a href="tel:'.esc_attr($docmed_header_top_phone).'"> <i class="fa-solid fa-phone"></i> '.$docmed_header_top_phone.'</a></li>';
                                         }
                                     ?>
                                 </ul>

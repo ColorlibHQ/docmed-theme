@@ -274,7 +274,7 @@ if( !defined( 'ABSPATH' ) ){
 				$docmed_blog_info_link_class = is_single() ? 'blog-info-link mt-3 mb-4' : 'blog-info-link';
 				?>
 				<ul class="<?php echo esc_attr( $docmed_blog_info_link_class )?>">
-					<li><i class="fa fa-tags"></i> <?php echo docmed_featured_post_cat(); ?></li>
+					<li><i class="fa-solid fa-tags"></i> <?php echo docmed_featured_post_cat(); ?></li>
 					<li><i class="ti-comments"></i> <?php echo docmed_posted_comments(); ?></li>
 				</ul>
 				<?php

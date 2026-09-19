@@ -234,17 +234,17 @@ Colorlib_Customizer::add_field(
             [
                 'social_link_title' => esc_html__( 'Facebook', 'docmed' ),
                 'social_url'  => '#',
-                'social_icon'  => 'fa fa-facebook',
+                'social_icon'  => 'fa-brands fa-facebook',
             ],
             [
                 'social_link_title' => esc_html__( 'Twitter', 'docmed' ),
                 'social_url'  => '#',
-                'social_icon'  => 'fa fa-twitter',
+                'social_icon'  => 'fa-brands fa-twitter',
             ],
             [
                 'social_link_title' => esc_html__( 'Instagram', 'docmed' ),
                 'social_url'  => '#',
-                'social_icon'  => 'fa fa-instagram',
+                'social_icon'  => 'fa-brands fa-instagram',
             ],
         ],
 		'fields'       => array(
@@ -263,7 +263,7 @@ Colorlib_Customizer::add_field(
 			'social_icon'        => array(
 				'label'   => esc_html__( 'Icon', 'docmed' ),
 				'type'    => 'colorlib-icon-picker',
-				'default' => 'fa fa-facebook',
+				'default' => 'fa-brands fa-facebook',
 			),
 			
 		),
