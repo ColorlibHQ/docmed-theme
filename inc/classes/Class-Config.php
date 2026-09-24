@@ -162,7 +162,7 @@ final class Docmed {
 					'handler'    => 'docmed-theme-bootstrap-css',
 					'file'       => $cssPath . 'bootstrap.min.css',
 					'dependency' => array(),
-					'version'    => '5.3.8-4',
+					'version'    => '5.3.8-5',
 				),
 				array(
 					'handler'    => 'docmed-theme-animate',
