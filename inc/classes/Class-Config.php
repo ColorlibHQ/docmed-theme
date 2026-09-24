@@ -259,20 +259,6 @@ final class Docmed {
 					'in_footer'  => true,
 				),
 				array(
-					'handler'    => 'docmed-theme-waypoints-js',
-					'file'       => $jsPath . 'waypoints.min.js',
-					'dependency' => array( 'jquery' ),
-					'version'    => '1.0',
-					'in_footer'  => true,
-				),
-				array(
-					'handler'    => 'docmed-theme-jquery-counterup-js',
-					'file'       => $jsPath . 'jquery.counterup.min.js',
-					'dependency' => array( 'jquery' ),
-					'version'    => '1.0',
-					'in_footer'  => true,
-				),
-				array(
 					'handler'    => 'scrollIt-js',
 					'file'       => $jsPath . 'scrollIt.js',
 					'dependency' => array( 'jquery' ),
@@ -282,20 +268,6 @@ final class Docmed {
 				array(
 					'handler'    => 'jquery-scrollUp-js',
 					'file'       => $jsPath . 'jquery.scrollUp.min.js',
-					'dependency' => array( 'jquery' ),
-					'version'    => '1.0',
-					'in_footer'  => true,
-				),
-				array(
-					'handler'    => 'docmed-theme-wow-js',
-					'file'       => $jsPath . 'wow.min.js',
-					'dependency' => array( 'jquery' ),
-					'version'    => '1.0',
-					'in_footer'  => true,
-				),
-				array(
-					'handler'    => 'docmed-theme-nice-select-js',
-					'file'       => $jsPath . 'nice-select.min.js',
 					'dependency' => array( 'jquery' ),
 					'version'    => '1.0',
 					'in_footer'  => true,
@@ -329,13 +301,6 @@ final class Docmed {
 					'in_footer'  => true,
 				),
 				array(
-					'handler'    => 'jquery-instagramFeed-js',
-					'file'       => $jsPath . 'jquery.instagramFeed.min.js',
-					'dependency' => array( 'jquery' ),
-					'version'    => '1.0',
-					'in_footer'  => true,
-				),		
-				array(
 					'handler'		=> 'docmed-theme-post-like-js',
 					'file' 			=> $jsPath.'post-likes.js',
 					'dependency' 	=> array( 'jquery' ),
@@ -343,10 +308,17 @@ final class Docmed {
 					'in_footer' 	=> true
 				),
 				array(
+					'handler'		=> 'docmed-ui-js',
+					'file' 			=> $jsPath.'colorlib-ui.js',
+					'dependency' 	=> array(),
+					'version' 		=> '2.1.1',
+					'in_footer' 	=> true
+				),
+				array(
 					'handler'    => 'docmed-theme-custom-js',
 					'file'       => $jsPath . 'main.js',
-					'dependency' => array( 'jquery' ),
-					'version'    => $this->docmed_version,
+					'dependency' => array( 'jquery', 'docmed-ui-js' ),
+					'version'    => $this->docmed_version . '-s1',
 					'in_footer'  => true,
 				),
 
