@@ -222,7 +222,7 @@ final class Docmed {
 					'handler'    => 'docmed-theme-main-style',
 					'file'       => $cssPath . 'style.css',
 					'dependency' => array(),
-					'version'    => $this->docmed_version,
+					'version'    => $this->docmed_version . '-s3',
 				),
 				array(
 					'handler' => 'docmed-theme-docmed-style',

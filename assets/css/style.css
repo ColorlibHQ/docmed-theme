@@ -190,21 +190,6 @@ h3 {
   background: #f5f5f5;
 }
 
-/* line 132, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/theme-default.scss */
-.bg-img-1 {
-  background-image: url(../img/slider/slider-img-1.jpg);
-}
-
-/* line 135, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/theme-default.scss */
-.bg-img-2 {
-  background-image: url(../img/background-img/bg-img-2.jpg);
-}
-
-/* line 138, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/theme-default.scss */
-.cta-bg-1 {
-  background-image: url(../img/background-img/bg-img-3.jpg);
-}
-
 /* line 143, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/theme-default.scss */
 .overlay {
   position: relative;
@@ -1228,16 +1213,6 @@ h3 {
   margin-right: 7px;
 }
 
-/* line 1, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_slider.scss */
-.slider_bg_1 {
-  background-image: url(../img/banner/banner.png);
-}
-
-/* line 4, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_slider.scss */
-.slider_bg_2 {
-  background-image: url(../img/banner/banner2.png);
-}
-
 /* line 8, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_slider.scss */
 .slider_area .single_slider {
   height: 700px;
@@ -1739,11 +1714,6 @@ h3 {
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
-}
-
-/* line 84, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_offers.scss */
-.video_bg {
-  background-image: url(../img/video/video.png);
 }
 
 /* line 87, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_offers.scss */
@@ -2459,21 +2429,6 @@ h3 {
   color: #fff !important;
 }
 
-/* line 1, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_bradcam.scss */
-.breadcam_bg {
-  background-image: url(../img/banner/bradcam.png);
-}
-
-/* line 4, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_bradcam.scss */
-.breadcam_bg_1 {
-  background-image: url(../img/banner/bradcam2.png);
-}
-
-/* line 7, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_bradcam.scss */
-.breadcam_bg_2 {
-  background-image: url(../img/banner/bradcam3.png);
-}
-
 /* line 10, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_bradcam.scss */
 .bradcam_area {
   padding: 170px;
@@ -2831,16 +2786,6 @@ h3 {
   left: auto;
 }
 
-/* line 58, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_tesmonial.scss */
-.testmonial_bg_1 {
-  background-image: url(../img/testmonial/1.png);
-}
-
-/* line 61, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_tesmonial.scss */
-.testmonial_bg_2 {
-  background-image: url(../img/testmonial/2.png);
-}
-
 /* line 1, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_service.scss */
 .service_area {
   background: #83C4FF;
@@ -3103,16 +3048,6 @@ h3 {
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   border-radius: 30px;
-}
-
-/* line 36, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_emergency_contact.scss */
-.emergency_bg_1 {
-  background-image: url(../img/banner/emergency-1.png);
-}
-
-/* line 39, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_emergency_contact.scss */
-.emergency_bg_2 {
-  background-image: url(../img/banner/emergency-2.png);
 }
 
 /*=================== contact banner start ====================*/
@@ -4214,12 +4149,6 @@ h6 {
   border: 1px solid #f1f1f1;
 }
 
-/* line 798, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_elements.scss */
-.primary-checkbox input:checked + label {
-  background: url(../img/elements/primary-check.png) no-repeat center center/cover;
-  border: none;
-}
-
 /* line 806, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_elements.scss */
 .confirm-checkbox {
   width: 16px;
@@ -4254,12 +4183,6 @@ h6 {
   border-radius: 3px;
   cursor: pointer;
   border: 1px solid #f1f1f1;
-}
-
-/* line 835, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_elements.scss */
-.confirm-checkbox input:checked + label {
-  background: url(../img/elements/success-check.png) no-repeat center center/cover;
-  border: none;
 }
 
 /* line 843, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_elements.scss */
@@ -4304,12 +4227,6 @@ h6 {
   z-index: 3;
 }
 
-/* line 876, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_elements.scss */
-.disabled-checkbox input:checked + label {
-  background: url(../img/elements/disabled-check.png) no-repeat center center/cover;
-  border: none;
-}
-
 /* line 884, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_elements.scss */
 .primary-radio {
   width: 16px;
@@ -4346,12 +4263,6 @@ h6 {
   border: 1px solid #f1f1f1;
 }
 
-/* line 913, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_elements.scss */
-.primary-radio input:checked + label {
-  background: url(../img/elements/primary-radio.png) no-repeat center center/cover;
-  border: none;
-}
-
 /* line 921, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_elements.scss */
 .confirm-radio {
   width: 16px;
@@ -4386,12 +4297,6 @@ h6 {
   border-radius: 8px;
   cursor: pointer;
   border: 1px solid #f1f1f1;
-}
-
-/* line 950, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_elements.scss */
-.confirm-radio input:checked + label {
-  background: url(../img/elements/success-radio.png) no-repeat center center/cover;
-  border: none;
 }
 
 /* line 958, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_elements.scss */
@@ -4434,12 +4339,6 @@ h6 {
 .disabled-radio input:disabled {
   cursor: not-allowed;
   z-index: 3;
-}
-
-/* line 991, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_elements.scss */
-.disabled-radio input:checked + label {
-  background: url(../img/elements/disabled-radio.png) no-repeat center center/cover;
-  border: none;
 }
 
 /* line 999, C:/Users/SPN Graphics/Desktop/CL September/210 Medical/HTML/scss/_elements.scss */
