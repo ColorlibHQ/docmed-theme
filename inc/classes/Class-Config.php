@@ -207,12 +207,6 @@ final class Docmed {
 					'version'    => '1.0',
 				),
 				array(
-					'handler'    => 'docmed-theme-gijgo-css',
-					'file'       => $cssPath . 'gijgo.css',
-					'dependency' => array(),
-					'version'    => '1.0',
-				),
-				array(
 					'handler'    => 'docmed-theme-slicknav-css',
 					'file'       => $cssPath . 'slicknav.css',
 					'dependency' => array(),
